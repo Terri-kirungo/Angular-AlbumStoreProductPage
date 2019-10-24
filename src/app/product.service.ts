@@ -10,7 +10,7 @@ export class ProductService {
   constructor(private _http: Http) { }
 
   getAlbum(id: number) {
-    return 
+    return this._http.get(this._albumUrl)
   }
 
 }
